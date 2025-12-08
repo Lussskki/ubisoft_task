@@ -1,13 +1,12 @@
-cmake_minimum_required(VERSION 4.0)
-project(ubisoft_task)
+cmake_minimum_required(VERSION 3.20)
+project(OpenGLProject)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
-add_executable(ubisoft_task
-        .idea/.gitignore
-        .idea/editor.xml
-        .idea/modules.xml
-        .idea/ubisoft_task.iml
-        .idea/vcs.xml
-        .idea/workspace.xml
-        main.cpp)
+find_package(glfw3 CONFIG REQUIRED)
+find_package(GLEW CONFIG REQUIRED)
+find_package(OpenGL REQUIRED)
+
+add_executable(OpenGLProject main.cpp)
+
+target_link_libraries(OpenGLProject PRIVATE glfw GLEW::GLEW OpenGL::GL)
