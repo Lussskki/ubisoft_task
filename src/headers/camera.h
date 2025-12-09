@@ -17,7 +17,7 @@ public:
     float Speed;
     float Sensitivity;
 
-    Camera(glm::vec3 position = glm::vec3(-0.111342f, 0.173541f, -1.19045f));
+    explicit Camera(glm::vec3 position = glm::vec3(-0.111342f, 0.173541f, -1.19045f));
 
 
     void ProcessKeyboard(int key, float deltaTime);
