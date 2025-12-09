@@ -12,7 +12,7 @@ int main() {
         return -1;
     }
 
-    GLFWwindow* window = glfwCreateWindow(800, 600, "OpenGL Window", nullptr, nullptr);
+    GLFWwindow* window = glfwCreateWindow(1000, 600, "OpenGl Renderer", nullptr, nullptr);
     if (!window) {
         std::cout << "Failed to create window\n";
         glfwTerminate();
