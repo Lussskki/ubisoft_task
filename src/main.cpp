@@ -79,8 +79,7 @@ int main() {
 
         // --- View matrix from camera ---
         glm::mat4 view = camera.GetViewMatrix();
-        GLint locView = glGetUniformLocation(shaderProgram, "view");
-        if (locView >= 0)
+        if (const GLint locView = glGetUniformLocation(shaderProgram, "view"); locView >= 0)
             glUniformMatrix4fv(locView, 1, GL_FALSE, glm::value_ptr(view));
 
         // --- Projection matrix ---
@@ -90,8 +89,7 @@ int main() {
             0.1f,
             100.0f
         );
-        GLint locProj = glGetUniformLocation(shaderProgram, "projection");
-        if (locProj >= 0)
+        if (const GLint locProj = glGetUniformLocation(shaderProgram, "projection"); locProj >= 0)
             glUniformMatrix4fv(locProj, 1, GL_FALSE, glm::value_ptr(projection));
 
         // --- Draw the cube ---
