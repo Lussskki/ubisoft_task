@@ -2,7 +2,7 @@
 // Created by Luka on 09.12.2025.
 //
 
-#include "./headers/cube.h"
+#include "../headers/cube.h"
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 

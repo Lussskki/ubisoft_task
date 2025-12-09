@@ -1,7 +1,7 @@
 //
 // Created by Luka on 09.12.2025.
 //
-#include "./headers/camera.h"
+#include "../headers/camera.h"
 #include <glm/gtc/matrix_transform.hpp>
 #include <GLFW/glfw3.h>
 
@@ -16,7 +16,7 @@ Camera::Camera(const glm::vec3 position)
     Sensitivity = 0.1f;
 }
 
-void Camera::ProcessKeyboard(int key, float deltaTime)
+void Camera::ProcessKeyboard(const int key, const float deltaTime)
 {
     const float velocity = Speed * deltaTime;
     if (key == GLFW_KEY_W)

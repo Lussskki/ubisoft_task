@@ -2,7 +2,7 @@
 // Created by Luka on 09.12.2025.
 //
 
-#include "./headers/input_handler.h"
+#include "../headers/input_handler.h"
 
 InputHandler::InputHandler(Camera* cam, float width, float height)
 {

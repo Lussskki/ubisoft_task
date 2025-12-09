@@ -1,10 +1,13 @@
-// utils.cpp
+//
+// Created by Luka on 09.12.2025.
+//
+
 #include <iostream>
 #include <fstream>
 #include <sstream>
 
 #include <GL/glew.h>
-#include "./headers/utils.h"
+#include "../headers/utils.h"
 
 std::string readFile(const std::string& path)
 {
@@ -21,7 +24,7 @@ std::string readFile(const std::string& path)
 
 GLuint compileShader(GLenum type, const char* code)
 {
-    GLuint shader = glCreateShader(type);
+    const GLuint shader = glCreateShader(type);
     glShaderSource(shader, 1, &code, nullptr);
     glCompileShader(shader);
 
@@ -38,8 +41,8 @@ GLuint compileShader(GLenum type, const char* code)
 
 GLuint createShaderProgram(const char* vertexCode, const char* fragmentCode)
 {
-    GLuint vertex = compileShader(GL_VERTEX_SHADER, vertexCode);
-    GLuint fragment = compileShader(GL_FRAGMENT_SHADER, fragmentCode);
+    const GLuint vertex = compileShader(GL_VERTEX_SHADER, vertexCode);
+    const GLuint fragment = compileShader(GL_FRAGMENT_SHADER, fragmentCode);
 
     GLuint program = glCreateProgram();
     glAttachShader(program, vertex);
