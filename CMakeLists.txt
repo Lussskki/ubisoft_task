@@ -21,3 +21,6 @@ add_executable(OpenGLProject src/main.cpp
 )
 
 target_link_libraries(OpenGLProject PRIVATE glfw GLEW::GLEW OpenGL::GL)
+# Shader location
+file(COPY ${CMAKE_SOURCE_DIR}/src/shaders DESTINATION ${CMAKE_BINARY_DIR})
+
