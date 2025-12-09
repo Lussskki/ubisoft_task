@@ -10,14 +10,14 @@ find_package(OpenGL REQUIRED)
 add_executable(OpenGLProject src/main.cpp
         src/shaders/shader.frag
         src/shaders/shader.vert
-        src/camera.cpp
+        src/source_files/camera.cpp
         src/headers/camera.h
-        src/input_handler.cpp
+        src/source_files/input_handler.cpp
         src/headers/input_handler.h
-        src/utils.cpp
+        src/source_files/utils.cpp
         src/headers/utils.h
         src/headers/cube.h
-        src/cube.cpp
+        src/source_files/cube.cpp
 )
 
 target_link_libraries(OpenGLProject PRIVATE glfw GLEW::GLEW OpenGL::GL)
