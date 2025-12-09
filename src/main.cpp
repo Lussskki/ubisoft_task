@@ -52,8 +52,8 @@ int main() {
 
     const Cube cube(glm::vec3(-1.0f, 0.0f, -5.0f));
 
-    const std::string vertexCode   = readFile("../shaders/shader.vert");
-    const std::string fragmentCode = readFile("../shaders/shader.frag");
+    const std::string vertexCode   = readFile("shaders/shader.vert");
+    const std::string fragmentCode = readFile("shaders/shader.frag");
     const GLuint shaderProgram = createShaderProgram(vertexCode.c_str(), fragmentCode.c_str());
 
     // Time tracking for smooth movement
