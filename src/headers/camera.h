@@ -22,5 +22,5 @@ public:
 
     void ProcessKeyboard(int key, float deltaTime);
     void ProcessMouseMovement(float xoffset, float yoffset);
-    glm::mat4 GetViewMatrix() const;
+    [[nodiscard]] glm::mat4 GetViewMatrix() const;
 };
