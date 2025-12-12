@@ -13,10 +13,13 @@ public:
     float lastX, lastY;
     bool firstMouse;
 
+    // --- NEW: Bloom Toggle State ---
+    bool bloomEnabled = false;
+
     InputHandler(Camera* cam, float width, float height);
 
     void ProcessKeyboard(GLFWwindow* window, float deltaTime) const;
     void MouseCallback(GLFWwindow* window, double xpos, double ypos);
 
-    void ProcessInput(GLFWwindow * window, float delta_time);
+    void ProcessInput(GLFWwindow * window, float deltaTime);
 };
