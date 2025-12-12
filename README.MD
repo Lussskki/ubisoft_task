@@ -8,21 +8,14 @@ The renderer includes a custom camera system, shader utilities, and real-time in
 
 ## Features
 
-Full HDR scene rendering
-
-Brightness extraction to create a “bright mask”
-
-Two-pass Gaussian blur using ping-pong FBOs
-
-Final bloom composition with exposure & tone mapping
-
-Custom vertex and fragment shaders
-
-FPS-style perspective camera
-
-Input handler with bloom toggle (B key)
-
-Efficient cube rendering with custom shaders
+ - Full HDR scene rendering
+ - Brightness extraction to create a “bright mask”
+ - Two-pass Gaussian blur using ping-pong FBOs
+ - Final bloom composition with exposure & tone mapping
+ - Custom vertex and fragment shaders
+ - FPS-style perspective camera
+ - Input handler with bloom toggle (B key)
+ - Efficient cube rendering with custom shaders
 
 ## Requirements
 C++ compiler (C++14 or later)
