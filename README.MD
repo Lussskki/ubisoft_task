@@ -18,10 +18,10 @@ The renderer includes a custom camera system, shader utilities, and real-time in
  - Efficient cube rendering with custom shaders
 
 ## Requirements
-C++ compiler (C++14 or later)
-OpenGL 3.3 Core Profile or higher
-GLFW
-CMake
+ - C++ compiler (C++14 or later)
+ - OpenGL 3.3 Core Profile or higher
+ - GLFW
+ - CMake
 
 ## Project Structure
 ```
